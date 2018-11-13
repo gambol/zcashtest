@@ -1,9 +1,10 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
 
 #from equihash import EquiValidation
 from ctypes import *
 from binascii import hexlify
 from pyzceqsolver import Solver
+import os
 
 newSolver = Solver()
 
