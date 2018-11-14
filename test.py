@@ -49,4 +49,22 @@ else:
 	print("wrong data : new algorithm false")
 
 
+start = time.time()
+print ('now time: %s, start old algorithm. 20000 times' % start)
+for num in range(0, 10000):
+        myso.SoluValidation(datab[:140], datab[143:143+1344])
+        myso.SoluValidation(bytes.fromhex(header), bytes.fromhex(block))
+
+stop = time.time()
+print('now time: %s, old algorithm cost :%s' % (stop, stop - start))
+
+start = time.time()
+print ('now time: %s, start new algorithm 20000 times' % start)
+for num in range(0, 10000):
+        newSolver.validate_solution(datab[:140], datab[143:143+1344])
+        newSolver.validate_solution(bytes.fromhex(header), bytes.fromhex(block))
+
+stop = time.time()
+print('now time: %s, new algorithm cost :%s' % (stop, stop - start))
+
 
