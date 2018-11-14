@@ -5,6 +5,7 @@ from ctypes import *
 from binascii import hexlify
 from pyzceqsolver import Solver
 import os
+import time
 
 newSolver = Solver()
 
